@@ -1,6 +1,13 @@
 .header{
-	padding: 10px
+	margin-left: 250px;
+	margin-right: 250px
 }
-body{
-	background-color: #000066
+
+.headernav{
+		margin-left: 10px;
+}
+
+.headerborder{
+	border-radius: 10px;
+	
 }

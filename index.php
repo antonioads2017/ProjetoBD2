@@ -11,24 +11,15 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="css/materialize.min.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	]
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 
 </head>
-<body>
-	<nav> 
-		<div class="nav-wrapper">
-			<a href="index.php" class="brand-logo left" >AF Informática</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a class="waves-light red btn modal-trigger" href="sass.html">Quem Somos?</a></li>
-				<li><a class="waves-light red btn modal-trigger" href="badges.html">Políticas do Site</a></li>
-				<li><a class="waves-light red btn modal-trigger" href="#modal1">Login</a></li>
-				<li><a class="waves-light red btn modal-trigger" href="#modal2">Cadastrar-se</a></li>
-			</ul>
-		</div>
-	</nav>
+<body style="background-image: url(img/informatica-background-5.jpg)">
+
+	<?php include "header.php" ?>
 
 	<div id="modal1" class="modal">
 		<div class="modal-content">
