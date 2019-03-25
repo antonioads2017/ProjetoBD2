@@ -1,4 +1,6 @@
 <?php
+
+	require("../databases/mongoDAO.php");
 	session_start();
 
 	$email = $_POST['email'];
@@ -13,7 +15,7 @@
 
 	if(!$resultado==null){
 		$_SESSION['logado']=$email;
-		header('location:#');
+		header('location:/pages/dados');
 	}else{
 		header('location:../index.php');
 	}

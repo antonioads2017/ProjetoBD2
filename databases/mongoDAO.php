@@ -13,7 +13,7 @@
 	}
 	function atualizarMongo($colecao,$novoDoc,$condicao){
 		global $db;
-		return $db->$colecao->updateOne($condicao,'$set'=>$novoDoc);
+		return $db->$colecao->updateOne($condicao,['$set' => $novoDoc]);
 	}
 	function removerMongo($colecao,$condicao){
 		global $db;
