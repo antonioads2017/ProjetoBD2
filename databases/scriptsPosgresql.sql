@@ -1,0 +1,9 @@
+CREATE TABLE Usuario(
+	email TEXT PRIMARY KEY,
+	senha TEXT NOT NULL,
+	cpf VARCHAR(15) UNIQUE,
+	nome TEXT NOT NULL,
+	nascimento DATE NOT NULL,
+	telefone VARCHAR(20),
+	sexo VARCHAR(20) NOT NULL
+);
