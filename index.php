@@ -15,11 +15,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
-<body style="background-color: #000066">
+<body>
 	
-	<div style="height: 100%; margin-left: 370px; margin-right: 370px;">
-
-		<div class="header" style="height: 250px; width: 1130px">
+	<div class="nav">
 			<nav style="color: yellow; border-radius: 10px;">
 	    		<div class="nav-wrapper">
 	      			<a href="#" class="brand-logo" style="margin-left: 10px; font-size: 42px">AF Informática</a>
@@ -30,10 +28,7 @@
 	      			</ul>
 	    		</div>
 	  		</nav>
-	  	</div>
-
 		<div style="background-color: white; height: 100%; margin-top: 20px; border-radius: 10px;">
-			a
 		</div>
 
 	</div>
