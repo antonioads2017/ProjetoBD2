@@ -21,9 +21,9 @@
 
 	<?php
 
-		$IsLogged = false;
+		session_start();
 
-  		if($IsLogged) {
+  		if(isset($_SESSION['logado'])) {
 
   			include ('headerlogged.php');
 
