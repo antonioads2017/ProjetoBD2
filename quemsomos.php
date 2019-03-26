@@ -35,7 +35,7 @@
 	?>
 
 	<div class="indexbody white">
-		<p class="text"> Somos um site pioneiro de Hardware e Periféricos, visado no custo por benefício e promoções que vão te deixar boquiaberta.</p>
+		<p class="text"> <b>Somos um site pioneiro de Hardware e Periféricos, visado no custo por benefício e promoções que vão te deixar boquiaberta.</b></p>
 		<div class="col s12 m8 offset-m2 l6 offset-l3">
 	        <div class="card-panel grey lighten-5 z-depth-1">
 	          	<div class="row valign-wrapper">
@@ -44,7 +44,7 @@
 	            	</div>
 	            	<div class="col s10">
 	              		<span class="black-text">
-	                		tony coloca aqui o q tu quer falar sobre tu, num bota pouca coisa nao, o meu ta pouco pq era um teste
+	                		<b>Antonio Miguel</b> - Técnico em Informátiva ha 8 anos e boa experiência na área de hardware, analista e desenvolvedor de sistemas em andamento.
 	              		</span>
 	            	</div>
 	          	</div>
@@ -58,7 +58,7 @@
 	            	</div>
 	            	<div class="col s10">
 	              		<span class="black-text">
-	                		Simpático, gosta de informática e development desde os seus 10 anos.
+	                		<b>Eduardo Lucas</b> Simpático, gosta de informática e development desde os seus 10 anos.
 	              		</span>
 	            	</div>
 	          	</div>
