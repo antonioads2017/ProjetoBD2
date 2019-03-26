@@ -19,7 +19,22 @@
 </head>
 <body style="background-image: url(img/informatica-background-5.jpg)">
 
-	<?php include "header.php" ?>
+	<?php
+
+		$IsLogged = false;
+
+  		if($IsLogged) {
+
+  			include ('headerlogged.php');
+
+  		} else {
+
+  			include ('header.php');
+
+  		}
+	?>
+
+	<div class="indexbody white"></div>
 
 	<div id="modal1" class="modal">
 		<div class="modal-content">
