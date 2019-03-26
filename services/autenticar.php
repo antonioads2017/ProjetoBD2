@@ -15,7 +15,7 @@
 
 	if(!$resultado==null){
 		$_SESSION['logado']=$email;
-		header('location:/pages/dados');
+		header('location:../index.php');
 	}else{
 		header('location:../index.php');
 	}

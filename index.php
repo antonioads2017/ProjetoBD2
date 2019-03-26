@@ -21,12 +21,11 @@
 
 	<?php
 
-		$IsLogged = false;
+		session_start();
 
-  		if($IsLogged) {
+  		if($_SESSION['logado']) {
 
   			include ('headerlogged.php');
-
   		} else {
 
   			include ('header.php');
@@ -40,17 +39,17 @@
 		<div class="modal-content">
 			<center>
 				<div class="row">
-					<form class="col10 s10" action="" method="">
+					<form class="col10 s10" action="/services/autenticar.php" method="POST">
 						<div class="row">
 							<div class="input-field col10 s10">
-								<input class="validate" id="email" type="email" required>
+								<input class="validate" id="email" type="email" name="email" required>
 								<label for="email">E-mail</label>
 							</div>
 							<div class="input-field col10 s10">
-								<input class="validate" id="email" type="password" required>
+								<input class="validate" id="email" type="password" name="senha" required>
 								<label for="password">Senha</label>
 							</div>
-							<button class="btn waves-effect waves-light red">Login</button>
+							<button class="btn waves-effect waves-light red" type="submit" name="action">Login</button>
 						</div>
 					</form>
 				</div>
@@ -62,30 +61,30 @@
 		<div class="modal-content">
 			<center>
 				<div class="row">
-					<form class="col10 s10" action="" method="">
+					<form class="col10 s10" action="/services/cadastrar.php" method="POST">
 						<div class="row">
 							<div class="input-field col10 s10">
-								<input class="validate" id="nome" type="text" required>
+								<input class="validate" id="nome" type="text" name="nome" required>
 								<label for="nome">Nome</label>
 							</div>
 							<div class="input-field col10 s10">
-								<input class="validate" id="email" type="email" required>
+								<input class="validate" id="email" type="email" name="email" required>
 								<label for="email">E-mail</label>
 							</div>
 							<div class="input-field col10 s10">
-								<input class="validate" id="email" type="password" required>
+								<input class="validate" id="email" type="password" name="senha" required>
 								<label for="password">Senha</label>
 							</div>
 							<div class="input-field col10 s10">
-								<input class="validate" id="cpf" type="text" required>
+								<input class="validate" id="cpf" type="text" name="cpf" required>
 								<label for="cpf">CPF</label>
 							</div>
 							<div class="input-field col10 s10">
-								<input class="validate" id="nascimento" type="date" required>
+								<input class="validate" id="nascimento" type="date" name="nascimento" required>
 								<label for="nascimento">Data de Nascimento</label>
 							</div>
 							<div class="input-field col10 s10">
-								<input class="validate" id="telefone" type="text" required>
+								<input class="validate" id="telefone" type="text" name="telefone" required>
 								<label for="telefone">Telefone</label>
 							</div>
 							<div class="input-field col10 s10">
