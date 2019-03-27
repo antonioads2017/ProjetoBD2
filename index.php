@@ -24,6 +24,7 @@
 
 		if(isset($_SESSION['logado'])){
 			header('location:home.php');
+			
 		}
 		include ('header.php');
 
@@ -35,7 +36,7 @@
 		<div class="modal-content">
 			<center>
 				<div class="row">
-					<form class="col10 s10" action="/services/autenticar.php" method="POST">
+					<form class="col10 s10" action="/services/usuario/autenticar.php" method="POST">
 						<div class="row">
 							<div class="input-field col10 s10">
 								<input class="validate" id="email" type="email" name="email" required>
@@ -57,7 +58,7 @@
 		<div class="modal-content">
 			<center>
 				<div class="row">
-					<form class="col10 s10" action="/services/cadastrar.php" method="POST">
+					<form class="col10 s10" action="/services/usuario/cadastrar.php" method="POST">
 						<div class="row">
 							<div class="input-field col10 s10">
 								<input class="validate" id="nome" type="text" name="nome" required>
