@@ -21,7 +21,7 @@ ul{
 	padding-right: 10px;
 }
 .circle{
-	width: 50px;
+	width: 70px;
 }
 body {
     display: flex;
@@ -31,4 +31,8 @@ body {
 
 main {
    	flex: 1 0 auto;
+}
+.produto{
+	width: 310px;
+	height: 533px
 }
