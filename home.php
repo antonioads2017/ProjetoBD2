@@ -23,9 +23,43 @@
 		include ('headerLogged.php');
 	?>
 
-	
-        <div class="indexbody">AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br>AAAAAAAAAAAAAAAAAAAAA<br></div>
+	<div class="indexbody">
+        <div class="produto">
+        	
+  			<div>
+    			<div class="s12 m3">
+      				<div class="card">
+        				<div class="card-image">
+          					<img src="img/z390_aorus_elite.png"><br>
+        				</div>
+        				<div class="card-content">
+        					<span class="card-title">Z390 Aorus Elite</span>
+        					<br>
+          					<p>Preço cartão: R$ 1.745,54</p>
+          					<br>
+          					<p>A vista (com desconto): R$ 1.437,68</p>
+          					<br>
+          					<a class="btn-floating left halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+          					<a class="btn-floating right halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></a>
+        				</div>
+      				</div>
+    			</div>
+  			</div>
             
+        </div>
+    </div>
+
+  	<!-- Modal Structure -->
+  	<div id="modal1" class="modal modal-fixed-footer">
+    	<div class="modal-content">
+      		<h4>tem que colocar o nome do produto aq vou pesquisar como faz isso</h4>
+      		<p>tem que colocar os detalhes do produto aq vou pesquisar como faz isso</p>
+    	</div>
+    	<div class="modal-footer">
+      		<a href="#!" class="modal-close waves-effect waves-green btn-flat">Comprar</a>
+    	</div>
+  	</div>
+          
 
 	
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
