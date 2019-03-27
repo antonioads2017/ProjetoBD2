@@ -6,7 +6,7 @@
 				<li><a class="waves-light red btn modal-trigger" href="meuPerfil.php">Meu perfil</a></li>
 				<li><a class="waves-light red btn modal-trigger" href="#modal2">Meus pedidos</a></li>
 				<li >
-					<form method="POST" action="/services/logout.php">
+					<form method="POST" action="/services/usuario/logout.php">
 						<button class="waves-light red btn" type="submit" name="action">Sair</button>
 					</form>
 				</li>
