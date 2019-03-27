@@ -22,6 +22,7 @@
 	<?php 
   header("Cache-Control: no-cache, must-revalidate");
   include ('headerLogged.php');
+  include('controllers/message.php');
   ?>
 
   <div class="indexbody">
