@@ -1,8 +1,9 @@
 <?php 
 
-	require ("../controllers/sessionLogado.php");
-	require("databases/mongoDAO.php");
-	if(excluirMongo('usuario',['email',$logado])){
+	session_start();
+	require("../../databases/mongoDAO.php");
+	$logado = $_SESSION['logado'];
+	if(removerMongo('usuario',['email'=>$logado])){
 		session_destroy();
 		header('location:../../index.php');
 	}
