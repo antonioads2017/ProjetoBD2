@@ -1,5 +1,5 @@
 <?php 
-	require("../databases/mongoDAO.php");
+	require("../../databases/mongoDAO.php");
 	session_start();
 
 	$email=$_POST['email'];
@@ -26,6 +26,6 @@
 		$resultado = cadastrarMongo("usuario",$doc);
 
 	}
-	header('location:../index.php'); 
+	header('location:../../index.php'); 
 
 ?>

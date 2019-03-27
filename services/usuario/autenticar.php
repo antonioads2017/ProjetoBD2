@@ -1,6 +1,6 @@
 <?php
 
-	require("../databases/mongoDAO.php");
+	require("../../databases/mongoDAO.php");
 	session_start();
 
 	$email = $_POST['email'];
@@ -15,10 +15,10 @@
 
 	if(!$resultado==null){
 		$_SESSION['logado']=$email;
-		header('location:../home.php');
+		header('location:../../home.php');
 		
 	}else{
-		header('location:../index.php');
+		header('location:../../index.php');
 		$_SESSION['msg']="Usuario e senha invalido";
 
 	}
