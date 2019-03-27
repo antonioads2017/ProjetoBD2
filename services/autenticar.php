@@ -15,9 +15,10 @@
 
 	if(!$resultado==null){
 		$_SESSION['logado']=$email;
-		header('location:../index.php');
+		header('location:../home.php');
 	}else{
 		header('location:../index.php');
+		$_SESSION['msg']="Usuario e senha invalido";
 	}
 
 ?>
