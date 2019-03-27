@@ -19,6 +19,10 @@
 		global $db;
 		return $db->$colecao->deleteMany($condicao);
 	}
+	function listarMongo($colecao){
+		global $db;
+		return $db->$colecao->find();
+	}
 
 
 

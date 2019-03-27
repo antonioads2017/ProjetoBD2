@@ -1,5 +1,5 @@
-<nav class="blue headerborder">
-	<div class="nav-wrapper">
+<nav class="headerborder indigo">
+	<div class="nav-wrapper indigo">
 		<form>
 			<div class="nav-wrapper">
 				<ul id="nav-mobile" class="left hide-on-med-and-down">
