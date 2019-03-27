@@ -1,7 +1,7 @@
 <nav class="headerborder indigo">
-	<div class="nav-wrapper indigo">
+	<div class="nav-wrapper indigo headerborder">
 		<form>
-			<div class="nav-wrapper">
+			<div class="nav-wrapper headerborder">
 				<ul id="nav-mobile" class="left hide-on-med-and-down">
 					<li><a class="waves-light red btn modal-trigger" href="#modal1">Carrinho</a></li>
 				</ul>
