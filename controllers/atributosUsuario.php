@@ -2,7 +2,7 @@
 	
 	require("databases/mongoDAO.php");
 
-	function buscarUsuario($user){
+	function buscarUsuarioPerfil($user){
 	$results = buscarMongo('usuario',['email'=>$user]);
 		if(!$results==null){
 			echo "<p><b>Nome completo: </b>" .$results['nome']."</p>
