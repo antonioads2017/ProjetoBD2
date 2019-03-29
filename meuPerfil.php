@@ -42,8 +42,9 @@
 						<div id="settings"><h5>Ferramentas do Usuario:</h5>
 							<a class="modal-trigger" href="#md2">Editar dados</a><br>
 							<a class="modal-trigger" href="#md1" >Desativar conta</a><br>
+			
+							<h5>Ferramentas de Produto</h5>
 							<?php admin($logado)?><br>
-							<!-- <a href="admin/gerencia.jsp">Gêrencia de Usuários</a> -->
 						</div>
 						</div>
 					</div>
@@ -148,6 +149,26 @@
 								</p>
 							</div>
 							<button class="btn waves-effect waves-light red" type="submit" name="action">Editar></button>
+							</div>
+						</form>
+					</div>
+				</center>
+			</div>
+		</div>
+		<div id="modal4" class="modal">
+		<div class="modal-content">
+			<center>
+				<div class="row">
+					<form class="col10 s10" action="/services/produto/excluir.php" method="POST">
+						<div class="row">
+							<div class="input-field col10 s10">
+								<h5>Digite o codigo do produto abaixo:</h5>
+							</div>
+							<div class="input-field col10 s10">
+								<input class="validate" id="codigo" type="text" name="codigo" required>
+								<label for="codigo">Codigo do Produto</label>
+							</div>
+							<button class="btn waves-effect waves-light red" type="submit" name="action">Excluir</button>
 							</div>
 						</form>
 					</div>
