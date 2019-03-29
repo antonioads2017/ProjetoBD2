@@ -17,15 +17,15 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<?php require ("controllers/sessionLogado.php");
-	require ("controllers/atributosUsuario.php"); ?>
+	require ("controllers/atributosUsuario.php");
+	require ("services/produto/isAdmin.php") ?>
 </head>
 <body>
 	<?php 
 	session_start();
 	include ('headerLogged.php');
-	
-
 	?>
+
 	<div class="indexbody">
 
 		<div class="row">
@@ -39,9 +39,10 @@
 							<?php buscarUsuarioPerfil($logado)?>
 
 						</div>
-						<div id="settings"><h5>Configuração da conta:</h5>
+						<div id="settings"><h5>Ferramentas do Usuario:</h5>
 							<a class="modal-trigger" href="#md2">Editar dados</a><br>
 							<a class="modal-trigger" href="#md1" >Desativar conta</a><br>
+							<?php admin($logado)?><br>
 							<!-- <a href="admin/gerencia.jsp">Gêrencia de Usuários</a> -->
 						</div>
 						</div>
@@ -61,6 +62,52 @@
 
 			</div>
 		</div>
+		<div id="modal3" class="modal">
+  <div class="modal-content">
+    <center>
+      <div class="row">
+        <form class="col10 s10" action="/services/produto/cadastrar.php" method="POST">
+          <div class="row">
+            <div class="input-field col10 s10">
+              <input class="validate" id="nome" type="text" name="codigo" required>
+              <label for="nome">Codigo:</label>
+            </div>
+            <div class="input-field col10 s10">
+              <input class="validate" id="nome" type="text" name="nome" required>
+              <label for="nome">Título:</label>
+            </div>
+            <div class="input-field col10 s10">
+              <input class="validate" id="preco" type="text" name="preco" required>
+              <label for="email">Preço(R$):</label>
+            </div>
+            
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" name="descricao" required></textarea>
+                    <label for="textarea1">Descrição:</label>
+                  </div>
+                  <div class="file-field input-field">
+                    <div class="btn">
+                      <span>Imagem</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+        
+            <button class="btn waves-effect waves-light red" type="submit" name="action">Cadastrar Produto
+            </div>
+          </form>
+        </div>
+      </center>
+    </div>
+  </div>
 		<div id="md2" class="modal">
 		<div class="modal-content">
 			<center>
@@ -100,13 +147,17 @@
 									</label>
 								</p>
 							</div>
-							<button class="btn waves-effect waves-light red" type="submit" name="action">Editar
+							<button class="btn waves-effect waves-light red" type="submit" name="action">Editar></button>
 							</div>
 						</form>
 					</div>
 				</center>
 			</div>
 		</div>
+		<?php 
+			include ('footer.php');
+			include ('controllers/message.php')
+		?>
 	</body>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
