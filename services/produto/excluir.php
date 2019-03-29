@@ -6,12 +6,11 @@
 
 	if(!buscarMongo('produto',['_id'=>$codigo])==null){
 		removerMongo('produto',['_id'=>$codigo]);
+		header('location:../../meuPerfil.php');
 		$_SESSION['msg']="Produto excluído com sucesso";
+	}else{	
 		header('location:../../meuPerfil.php');
-	}else{
-		
 		$_SESSION['msg']="Codigo incorreto ou produto nao existe!";
-		header('location:../../meuPerfil.php');
 	}
 
 

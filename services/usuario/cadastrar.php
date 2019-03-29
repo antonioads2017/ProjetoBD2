@@ -13,7 +13,7 @@
 	$doc=[
 		'email'=>$email,
 		'senha'=>$senha,
-		'admin'=>'false',
+		'admin'=>'true',
 		'nome'=>$nome,
 		'cpf'=>$cpf,
 		'nascimento'=>$nascimento,
