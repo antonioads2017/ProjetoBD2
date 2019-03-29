@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
   <?php require ("controllers/sessionLogado.php");
+      
    ?>
 
 </head>
@@ -64,48 +65,7 @@
 </div>
 </div>
 
-<div id="modal3" class="modal">
-  <div class="modal-content">
-    <center>
-      <div class="row">
-        <form class="col10 s10" action="/services/usuario/cadastrar.php" method="POST">
-          <div class="row">
-            <div class="input-field col10 s10">
-              <input class="validate" id="nome" type="text" name="nome" required>
-              <label for="nome">Título:</label>
-            </div>
-            <div class="input-field col10 s10">
-              <input class="validate" id="preco" type="text" name="preco" required>
-              <label for="email">Preço(R$):</label>
-            </div>
-            
-            <div class="row">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Descrição:</label>
-                  </div>
-                  <div class="file-field input-field">
-                    <div class="btn">
-                      <span>Imagem</span>
-                      <input type="file">
-                    </div>
-                    <div class="file-path-wrapper">
-                      <input class="file-path validate" type="text">
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-        
-            <button class="btn waves-effect waves-light red" type="submit" name="action">Cadastrar Produto
-            </div>
-          </form>
-        </div>
-      </center>
-    </div>
-  </div>
+
 
 
 
