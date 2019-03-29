@@ -3,7 +3,8 @@
 		<form>
 			<div class="nav-wrapper headerborder">
 				<ul id="nav-mobile" class="left hide-on-med-and-down">
-					<li><a class="waves-light red btn modal-trigger" href="#modal1">Carrinho</a></li>
+					<li><a class="waves-light red btn modal-trigger" href="market.php">Carrinho</a></li>
+					<li><a class="waves-light red btn modal-trigger" href="#modal3">Adicionar produto</a></li>
 				</ul>
 				<div class="headersearch headerborder red">
 					<form>
@@ -18,4 +19,3 @@
 		</form>
 	</div>
 </nav>
-</div>
