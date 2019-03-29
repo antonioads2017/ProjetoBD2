@@ -33,6 +33,10 @@ main {
    	flex: 1 0 auto;
 }
 .produto{
-	width: 310px;
-	height: 533px
+	flex: 1 0 auto;
+	width: 300px;
+}
+.card-image{
+	width: 140px;
+	height: 150px;
 }
