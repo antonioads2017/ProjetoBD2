@@ -13,13 +13,14 @@
 	$doc=[
 		'email'=>$email,
 		'senha'=>$senha,
+		'admin'=>'false',
 		'nome'=>$nome,
 		'cpf'=>$cpf,
 		'nascimento'=>$nascimento,
 		'telefone'=>$telefone,
 		'sexo'=>$sexo,
 	];
-	if(!buscarMongo('usuario',['email'=>$email,])==null){
+	if(!buscarMongo('usuario',['email'=>$email])==null){
 		$_SESSION['msg']="Ja existe usuario cadastrado nesse email";
 
 	}else{
