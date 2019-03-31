@@ -22,8 +22,8 @@
 </head>
 <body>
 	<?php 
-	session_start();
 	include ('headerLogged.php');
+	session_start();
 	?>
 
 	<div class="indexbody">

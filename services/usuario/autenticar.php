@@ -1,6 +1,7 @@
 <?php
 
 	require("../../databases/mongoDAO.php");
+	require ('../../databases/redisConnection.php');
 	session_start();
 
 	$email = $_POST['email'];
