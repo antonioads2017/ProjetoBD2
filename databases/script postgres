@@ -1,0 +1,5 @@
+﻿CREATE TABLE endereco(
+	id SERIAL PRIMARY KEY,
+	logado VARCHAR(150),
+	endereco TEXT NOT NULL
+);
