@@ -37,6 +37,7 @@
 					<div class="card-content grey lighten-4">
 						<div id="dados">
 							<?php buscarUsuarioPerfil($logado)?>
+							<br><a class="waves-effect waves-light btn" href="meusEnderecos.php">Meus Endereços</a>
 
 						</div>
 						<div id="settings"><h5>Ferramentas do Usuario:</h5>
