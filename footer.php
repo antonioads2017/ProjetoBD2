@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="css/header.css">
-
+<link rel="stylesheet" type="text/css" href="css/index.css">
 <footer class="page-footer headerborder header indigo indexbody" >
           <div class="container offset-l2">
             <div class="row">
