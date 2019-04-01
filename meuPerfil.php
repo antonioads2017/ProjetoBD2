@@ -91,13 +91,6 @@
                     <label for="textarea1">Descrição:</label>
                   </div>
                   <div class="file-field input-field">
-                    <div class="btn">
-                      <span>Imagem</span>
-                      <input type="file">
-                    </div>
-                    <div class="file-path-wrapper">
-                      <input class="file-path validate" type="text">
-                    </div>
                   </div>
                 </div>
               </form>
@@ -118,7 +111,7 @@
 						<div class="row">
 							<div class="input-field col10 s10">
 								<input class="validate" id="nome" type="text" name="nome" required>
-								<label for="nome"></label>
+								<label for="nome">Nome</label>
 							</div>
 							<div class="input-field col10 s10">
 								<input class="validate" id="email" type="password" name="senha" required>

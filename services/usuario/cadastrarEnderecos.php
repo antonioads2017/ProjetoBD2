@@ -1,7 +1,7 @@
 <?php
 // ini_set('display_errors', true);
 // error_reporting(E_ALL);
-require("databases/postgresConnection.php");
+require("../../databases/postgresConnection.php");
 session_start();
 
 $con = getConnection();
