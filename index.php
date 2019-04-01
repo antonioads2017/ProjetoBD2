@@ -25,7 +25,6 @@
 
 		if(isset($_SESSION['logado'])){
 			header('location:home.php');
-			
 		}
 		include ('header.php');
 
