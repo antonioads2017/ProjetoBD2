@@ -1,5 +1,11 @@
 ﻿CREATE TABLE endereco(
 	id SERIAL PRIMARY KEY,
 	logado VARCHAR(150),
-	endereco TEXT NOT NULL
+	country VARCHAR(30),
+	province VARCHAR(30),
+	city VARCHAR(30),
+	street VARCHAR(100),
+	postal_code VARCHAR(20),
+	country_code VARCHAR(20),
+	formatted_address VARCHAR(150)
 );
