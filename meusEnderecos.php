@@ -57,7 +57,9 @@
 				<div class="card headerborder">
 					<div class="col s10 m5 l12 card-content grey lighten-4 headerborder">
 						<div class="col s10 m5 l12 headerborder">
+							<table class="responsive-table"><thead><tr><th>Rua</th><th>País</th><th>Estado</th><th>CEP</th><th>Endereço Completo</th></tr></thead>
 							<?php listar($logado);?>
+							</table><br>
 							<a href="#modalendereco" class="waves-light btn modal-trigger" >Adicionar Endereço</a>
 						</div>
 					</div>
