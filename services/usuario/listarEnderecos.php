@@ -9,16 +9,14 @@ function listar ($logado){
 	closeConnection($con);
 	if(!empty(pg_num_rows($resultados))){
 		while($resultado = pg_fetch_assoc($resultados)) {
-			echo '<h6 class="z-depth-2">'.$resultado['endereco'].'</h6>';
+			echo '<table><tr><td class="listaendereco">'.$resultado['country'].'</td><td class="listaendereco">'.$resultado['province'].'</td><td class="listaendereco">'.$resultado['city'].'</td><td class="listaendereco">'.$resultado['street'].'</td><td class="listaendereco">'.$resultado['postal_code'].'</td><td class="listaendereco">'.$resultado['country_code'].'</td><td class="listaendereco">'.$resultado['formatted_address'].'</td></tr></table><br>';
 		}
 
 	}else{
-		echo '<h6>Não endereços cadastrados';
+		echo '<h6>Não há endereços cadastrados</h6><br>';
 	}
 	
 
 }
-
-
 
 ?>
