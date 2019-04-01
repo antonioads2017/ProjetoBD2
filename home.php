@@ -22,7 +22,7 @@
   ?>
 
 </head>
-<body style="background-image: url(img/informatica-background-5.jpg)">
+<body>
 	<?php 
   header("Cache-Control: no-cache, must-revalidate");
   include ('headerLogged.php');
