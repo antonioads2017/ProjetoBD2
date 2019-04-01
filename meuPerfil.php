@@ -41,11 +41,11 @@
 
 						</div>
 						<div id="settings"><h5>Ferramentas do Usuario:</h5>
-							<a class="modal-trigger" href="#md2">Editar dados</a><br>
-							<a class="modal-trigger" href="#md1" >Desativar conta</a><br>
+							<a class="waves-effect waves-light btn modal-trigger" href="#md2">Editar dados</a><br><br>
+							<a class="waves-effect waves-light btn modal-trigger" href="#md1" >Desativar conta</a><br>
 			
 							<h5>Ferramentas de Produto</h5>
-							<?php admin($logado)?><br>
+							<?php admin($logado)?>
 						</div>
 						</div>
 					</div>
