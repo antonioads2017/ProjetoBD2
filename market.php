@@ -39,13 +39,15 @@
             <table class="responsive-table">
                 <thead>
                   <tr>
-                    <td>ID</td>
-                    <td>Nome</td>
-                    <td>Preço</td>
+                    <td><b>ID</b></td>
+                    <td><b>Nome</b></td>
+                    <td><b>Preço</b></td>
+                    <td><b>Quantidade</b></td>
+                    <td><b>Subtotal</b></td>
                   </tr>
                 </thead>
                 <?php include("services/carrinho/listar.php");?>
-            </table>
+           
 
             </div>
           </div>
