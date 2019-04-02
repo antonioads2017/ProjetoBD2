@@ -47,12 +47,20 @@
                   </tr>
                 </thead>
                 <?php include("services/carrinho/listar.php");?>
+                <form action="/services/pedido/fazerPedido.php" method="POST">
+                  <p>Selecione seu endereço</p>
                 <select class="browser-default" name="SELECT">
                      <?php include("services/carrinho/enderecos.php");?>
+                </select><br>
+                <p>Selecione forma de pagamento</p>
+                <select class="browser-default" name="SELECTPAY">
+                     <option>Cartão de Credito</option>
+                     <option>Boleto Bancário</option>
+                     <option>Depósito</option>
+                </select><br>
 
-                </select>
-           
-
+                <button type="submit" name="action" class="btn waves-effect waves-light">Fechar Pedido</button>
+           </form>
             </div>
           </div>
         </div>
