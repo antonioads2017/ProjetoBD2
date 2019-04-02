@@ -1,6 +1,6 @@
 <?php
-// ini_set('display_errors', true);
-// error_reporting(E_ALL);
+ini_set('display_errors', true);
+error_reporting(E_ALL);
 require("../../databases/postgresConnection.php");
 session_start();
 
@@ -11,8 +11,6 @@ $logado = $_SESSION['logado'];
 
 function Get_Address_From_Google_Maps($lat, $lon) {
 
-
-
 	$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lon&key=AIzaSyClZO-6azxa5SPpFYmEsp7rb1VFKQG88qE";
 
 	// Make the HTTP request
@@ -22,7 +20,6 @@ function Get_Address_From_Google_Maps($lat, $lon) {
 
 	// If the json data is invalid, return empty array
 	if (!check_status($jsondata)){
-		echo "ta retornando vazio";
 		return array();
 	}
 	else{
@@ -102,23 +99,9 @@ function Get_Address_From_Google_Maps($lat, $lon) {
 	$countrycode = $arrayendereco['country_code'];
 	$formattedaddress = $arrayendereco['formatted_address'];
 
-	echo "<pre>";
-	print_r($arrayendereco);
-	echo "</pre>";
-
-
 	$query = "INSERT INTO endereco(logado, country, province, city, street, postal_code, country_code, formatted_address) VALUES('$logado', '$country', '$province', '$city', '$street', '$postalcode', '$countrycode', '$formattedaddress')";
 	pg_query($con, $query);
 	closeConnection($con);
 	header('location:../../meusEnderecos.php');
-
-
-
-
-
-
-
-
-
 
 	?>
