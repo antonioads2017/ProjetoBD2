@@ -47,6 +47,10 @@
                   </tr>
                 </thead>
                 <?php include("services/carrinho/listar.php");?>
+                <select class="browser-default" name="SELECT">
+                     <?php include("services/carrinho/enderecos.php");?>
+
+                </select>
            
 
             </div>
