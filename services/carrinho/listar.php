@@ -1,25 +1,22 @@
 <?php 
 	require ("controllers/sessionLogado.php");
-	
-	$redis = new Redis();
+	require("databases/mongoDAO.php");
 
-	$redis->pconnect('127.0.0.1',6379);
 
-	$produtos = $redis->get($logado);
-?>
-	<h5><?php echo $produtos?></h5>
+	$produtos = listarMongo('carrinho');
 
-	<?php foreach ($produtos as $produto => $value) {
-		# code...
-	}{
+	foreach ($produtos as $produto) {
 		?>
 			<tr>
-				<td><?php echo $value['_id']; ?></td>
-				<td><?php echo $value['nome'];?></td>
-				<td><?php echo $value['preco'];?></td>
-			</tr>
-	
+				<td><?php echo $produto['id']; ?></td>
+				<td><?php echo $produto['nome'];?></td>
+				<td>R$ <?php echo $produto['preco'];?></td>
+				<td><?php echo $produto['quantidade'];?></td>
+				<td>R$ <?php echo $produto['preco']*$produto['quantidade'];?></td>
+
+			</tr> <?php $total = $total + $produto['preco']*$produto['quantidade']; ?>
+	 		
 
 	<?php
-	}
-?>
+	}?> <tr><td colspan="4"><h5>R$ <?php echo $total?> à Vista</h5><p>ou em 10x de R$ <?php echo $total/10?></p></td></tr> </table>
+		
