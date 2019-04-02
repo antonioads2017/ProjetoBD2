@@ -42,7 +42,7 @@
 											<?php include ("googlemaps.php"); ?>
 										</div>
 									</div><br>
-									<input type="text" id="enderecoformatted" name="enderecoformatted" value="a">
+									<input type="text" id="enderecoformatted" name="enderecoformatted" value="">
 									<input type="text" id="latitude" name="latitude" value="" hidden="true">
 									<input type="text" id="longitude" name="longitude" value="" hidden="true">
 									<button class="btn waves-effect waves-light red" type="submit" name="action">Cadastrar endereço</button>
@@ -58,7 +58,16 @@
 				<div class="card headerborder">
 					<div class="col s10 m5 l12 card-content grey lighten-4 headerborder">
 						<div class="col s10 m5 l12 headerborder">	
-							<table class="responsive-table"><thead><tr><th>ID</th><th>Rua</th><th>País</th><th>Estado</th><th>CEP</th><th>Endereço Completo</th></tr></thead>
+							<table class="responsive-table">
+								<thead>
+									<tr><th>ID</th>
+										<th>Rua</th>
+										<th>País</th>
+										<th>Estado</th>
+										<th>CEP</th>
+										<th>Endereço Completo</th>
+									</tr>
+								</thead>
 								<?php listar($logado);?>
 							</table><br>
 							<a href="#modalendereco" class="waves-light btn modal-trigger" >Adicionar Endereço</a>

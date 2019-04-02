@@ -28,6 +28,47 @@
     include('controllers/message.php');
     ?> 
 
+    <div class="indexbody">
+      <div class="row">
+      <div class="col s12"></div>
+      <div class="col s12 m4 l2"></div>
+      <div class="col s12 m4 l12 ">
+        <h4 class="white-text center">Meu Carrinho</h4>
+        <div class="card">
+          <div class="card-content grey lighten-4">
+            <table class="responsive-table">
+                <thead>
+                  <tr>
+                    <td>ID</td>
+                    <td>Nome</td>
+                    <td>Preço</td>
+                  </tr>
+                </thead>
+                <?php include("services/carrinho/listar.php");?>
+            </table>
+
+            </div>
+          </div>
+        </div>
+        <div id="md1" class="modal">
+                <div class="modal-content">
+                    <h4>Por favor, confirme</h4>
+                    <p>Deseja continuar com esta ação?</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close btn">Não</a>
+                    <a href="/services/usuario/excluir.php"
+                       class="waves-effect waves-green red btn-flat center-align" id="md1_YesBtn">Sim</a>
+                </div>
+            </div>
+
+      </div>
+    </div>
+
+
+
+    </div>
+
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/materialize.js"></script>
