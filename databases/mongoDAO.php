@@ -24,6 +24,14 @@
 		global $db;
 		return $db->$colecao->find();
 	}
+	function listarCMongo($colecao,$condicao){
+		global $db;
+		return $db->$colecao->find($condicao);
+	}
+	function apagarColecao($colecao){
+		global $db;
+		return $db->$colecao->drop();
+	}
 
 
 ?>
