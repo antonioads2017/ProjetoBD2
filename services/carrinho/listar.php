@@ -18,5 +18,5 @@
 	 		
 
 	<?php
-	}?> <tr><td colspan="4"><h5>R$ <?php echo $total?> à Vista</h5><p>ou em 10x de R$ <?php echo $total/10?></p></td></tr> </table>
+	}?> <tr><td colspan="4"><h5>R$ <?php echo $total-($total*0.1)?>,00 à vista no boleto</h5><p>ou em 10x de R$ <?php echo $total/10?>,00</p></td></tr> </table>
 		

@@ -5,16 +5,10 @@ require ("../../controllers/sessionLogado.php");
 
 $id = $_GET['produto'];
 
-$docProduto = buscarMongo('produto',['_id'=>$id]);
-$doc = [
-	'id' => $docProduto['_id'],
-	'nome'=>$docProduto['nome'],
-	'preco'=>$docProduto['preco'],
-	'quantidade'=>1,
-];
 
 
 
+$doc=buscarMongo('carrinho',['id'=>$id]);
 if(buscarMongo('carrinho',['id'=>$doc['id']])!=null){
 	$docNovo=[
 		'id' => $doc['id'],
@@ -24,6 +18,13 @@ if(buscarMongo('carrinho',['id'=>$doc['id']])!=null){
 	];
 	atualizarMongo('carrinho',$docNovo,['id'=>$doc['id']]);
 }else{
+	$docProduto = buscarMongo('produto',['_id'=>$id]);
+	$doc = [
+	'id' => $docProduto['_id'],
+	'nome'=>$docProduto['nome'],
+	'preco'=>$docProduto['preco'],
+	'quantidade'=>1,
+];
 	cadastrarMongo('carrinho',$doc);
 }
 
