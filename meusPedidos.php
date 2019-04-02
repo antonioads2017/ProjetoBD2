@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+r<!DOCTYPE html>
 <html>
 <head>
 
@@ -25,16 +25,16 @@
 	<?php 
 	header("Cache-Control: no-cache, must-revalidate");
 	include ('headerLogged.php');
-	include('controllers/message.php');
+	
 	?>
 	<div class="indexbody">
-		<div class="white headerborder left-align valign-wrapper">
-			<img class="imgpedido" src="img/z390_aorus_elite.png">
-			<h6>teste z390</h6>
-		</div>
-	</div>
+		<div class="row">
+		<h4 class="white-text center">Meus Pedidos</h4>
+		<?php include ("services/pedido/listar.php") ?>
+	</div></div>
 	<?php 
 	include ('footer.php');
+	include('controllers/message.php');
 	?>
 
 	
