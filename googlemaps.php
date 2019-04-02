@@ -23,10 +23,6 @@
   <body>
     <div id="map"></div>
 
-    <?php 
-    include ("services/usuario/cadastrarEndereco.php");
-    ?>
-
     <script>
       var markers = [];
 
@@ -47,6 +43,12 @@
         var infoWindow = new google.maps.InfoWindow;
 
         map.addListener('click', function(e) {
+        	var geocoder  = new google.maps.Geocoder();
+        	geocoder.geocode({'latLng': e.latLng}, function (results, status) {
+						if(status == google.maps.GeocoderStatus.OK) {           // if geocode success
+							document.getElementById("enderecoformatted").value = results[0].formatted_address;  
+						}
+					});
           var lat = document.getElementById("latitude").value = e.latLng.lat();
           var lon = document.getElementById("longitude").value = e.latLng.lng();
           deleteMarkers();
@@ -78,6 +80,8 @@
           }
         }
 
+        function listarEndereco($lat, $lon) {
+        }
 
           // Change this depending on the name of your PHP or XML file
           downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
@@ -114,8 +118,6 @@
             });
           });
         }
-
-
 
         function downloadUrl(url, callback) {
           var request = window.ActiveXObject ?
