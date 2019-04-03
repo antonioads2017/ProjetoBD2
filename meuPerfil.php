@@ -70,7 +70,7 @@
         <form class="col10 s10" action="/services/produto/cadastrar.php" method="POST">
           <div class="row">
             <div class="input-field col10 s10">
-              <input class="validate" id="nome" type="text" name="codigo" required>
+              <input class="validate" id="nome" type="number" name="codigo" required>
               <label for="nome">Codigo:</label>
             </div>
             <div class="input-field col10 s10">
@@ -78,7 +78,7 @@
               <label for="nome">Título:</label>
             </div>
             <div class="input-field col10 s10">
-              <input class="validate" id="preco" type="text" name="preco" required>
+              <input class="validate" id="preco" type="number" name="preco" required>
               <label for="email">Preço(R$):</label>
             </div>
             
@@ -158,7 +158,7 @@
 								<h5>Digite o codigo do produto abaixo:</h5>
 							</div>
 							<div class="input-field col10 s10">
-								<input class="validate" id="codigo" type="text" name="codigo" required>
+								<input class="validate" id="codigo" type="number" name="codigo" required>
 								<label for="codigo">Codigo do Produto</label>
 							</div>
 							<button class="btn waves-effect waves-light red" type="submit" name="action">Excluir</button>

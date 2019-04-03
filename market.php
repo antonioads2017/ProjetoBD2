@@ -36,6 +36,7 @@
         <h4 class="white-text center">Meu Carrinho</h4>
         <div class="card">
           <div class="card-content grey lighten-4">
+            <a class="btn waves-effect waves-light red" href="services/carrinho/apagarCarrinho.php">Apagar Carrinho</a>
             <table class="responsive-table">
                 <thead>
                   <tr>
