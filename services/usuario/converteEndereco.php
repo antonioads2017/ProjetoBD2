@@ -7,7 +7,7 @@ $lon = (String)$_POST['longitude'];
 
 function Get_Address_From_Google_Maps($lat, $lon) {
 
-	$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lon&key=AIzaSyClZO-6azxa5SPpFYmEsp7rb1VFKQG88qE";
+	$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lon&key=SUAKEY";
 
 	// Make the HTTP request
 	$data = @file_get_contents($url);
