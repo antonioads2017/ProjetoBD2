@@ -5,9 +5,9 @@
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a class="waves-light red btn modal-trigger" href="meuPerfil.php">Meu perfil</a></li>
 				<li><a class="waves-light red btn modal-trigger" href="meusPedidos.php">Meus pedidos</a></li>
-				<li >
+				<li>
 					<form method="POST" action="/services/usuario/logout.php">
-						<button class="waves-light red btn" type="submit" name="action">Sair</button>
+						<button class="waves-light center-align red btn" type="submit" name="action">Sair</button>
 					</form>
 				</li>
 			</ul><br>

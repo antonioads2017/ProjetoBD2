@@ -13,18 +13,17 @@ r<!DOCTYPE html>
 
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	]
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<?php require ("controllers/sessionLogado.php");
-
 	?>
 
 </head>
 <body>
 	<?php 
-	header("Cache-Control: no-cache, must-revalidate");
+	
 	include ('headerLogged.php');
+	header("Cache-Control: no-cache, must-revalidate");
 	
 	?>
 	<div class="indexbody">

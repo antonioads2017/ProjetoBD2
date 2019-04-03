@@ -40,7 +40,7 @@
           center: new google.maps.LatLng(-6.885756, -38.560952),
           zoom: 12
         });
-        var infoWindow = new google.maps.InfoWindow;
+        var infoWindow = new google.maps.InfoWindow;	
 
         map.addListener('click', function(e) {
         	var geocoder  = new google.maps.Geocoder();

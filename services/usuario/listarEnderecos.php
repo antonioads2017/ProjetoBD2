@@ -15,8 +15,6 @@ function listar ($logado){
 	}else{
 		echo '<tr><td>Não há endereços cadastrados</td></tr><br>';
 	}
-	
 
 }
-
 ?>

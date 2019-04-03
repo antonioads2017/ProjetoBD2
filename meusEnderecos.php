@@ -23,7 +23,6 @@
 <body>
 	<?php 
 	include ('headerLogged.php');
-	session_start();
 	?>
 	<div class="indexbody">
 
